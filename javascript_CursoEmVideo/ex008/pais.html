@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>seletore de pais</h1>
+    Em qual pais voce mora <input type="text" name="txtpais" id="txtpais">!
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular(){
+            let txtp = document.getElementById('txtpais') 
+            let res = document.getElementById('res')
+            if(txtp.value == 'brasil'){
+                res.innerHTML = 'Voce é Brasileiro'
+            } else{
+                res.innerHTML = 'voce não é Brasileiro'
+            }
+        }
+    </script>
+</body>
+</html>

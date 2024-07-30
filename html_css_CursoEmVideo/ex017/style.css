@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(158, 137, 179);
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    text-align: justify;
+}
+
+#principal{
+    color: rgb(128, 84, 168);
+    text-align: center;
+    background-color: rgb(66, 19, 109);
+}
+
+.subtitulos{
+    color: rgb(78, 15, 136);
+    text-decoration: underline;
+}
+
+.primeiro{
+    color: rgb(22, 5, 37)
+}

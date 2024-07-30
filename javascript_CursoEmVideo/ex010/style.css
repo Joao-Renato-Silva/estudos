@@ -1,0 +1,26 @@
+body{
+    background-color: lightblue;
+}
+header{
+    text-align: center;
+    margin-top: 7%;
+    font-size: 20px;
+}
+
+#dados{
+    background-color: white;
+    padding-top: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 10px;
+}
+#confirme{
+    margin-left: 10px;
+}
+p{
+    padding: 10px 10px;
+}
+
+footer{
+    text-align: center;
+}

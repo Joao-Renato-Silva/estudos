@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+
+}
+html{
+
+}
+body{
+    background-color: black;
+}
+header{
+    background-color: rgb(48, 109, 199);
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+nav{
+    text-align: center;
+    background-color: rgb(85, 69, 231);
+    padding: 10px;
+}
+
+nav > a{
+    padding: 2%;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+main{
+    margin: 1% 5%;
+    height: 715px;
+    background-color: rgba(59, 66, 170, 0.664);
+}
+
+section{
+    text-align: center;
+}
+section > h1{
+    padding: 3%;
+    background-color: rgba(53, 114, 245, 0.822);
+    font-size: 3em;
+}
+
+.primeiro{
+    width:35%;
+    height: 247px;
+    float: left;
+    padding: 2% 2% 0% 2%;
+    overflow: auto;
+    background-color: rgb(187, 187, 44);
+}
+
+.primeiro > p{
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.493);
+    padding-top:3%;
+}
+
+.segundo{
+    width: 55%;
+    min-height: 494px;
+    float: right;
+    padding: 2% 3%;
+    overflow: auto;
+    background-color: rgb(45, 189, 189);
+}
+
+.segundo > p{
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.493);
+    padding-top:3%;
+}
+
+.terceiro{
+    background-color: rgb(231, 131, 0);
+    width:35%;
+    height: 247px;
+    padding: 2% 2% 0% 2%;
+    overflow: auto;
+    float: left;
+}
+
+footer{
+    background-color: rgb(11, 23, 92);
+    color: rgb(255, 255, 255);
+    text-decoration: center;
+    padding-top: 15px;
+    text-align: center;
+    position:sticky;
+    width: 100%;
+    height: 100%;
+}
