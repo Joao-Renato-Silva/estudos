@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="emailCliente">Email</label><br>
+        <input type="email" name="emailCliente" id="email">
+        <button type="submit" onclick="cadastros()">cadastro</button>
+    </form>
+    <script>
+        function cadastros(){
+            var email = document.getElementById('email')
+            alert(`seu nome é: ${email.value}`)
+        }
+    </script>
+</body>
+</html>

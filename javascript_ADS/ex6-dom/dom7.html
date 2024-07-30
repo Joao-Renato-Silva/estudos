@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function evnto(){
+            alert('alert')
+        }
+        function passar(){
+            document.getElementById("exemplo").innerHTML = "agora voce ve"
+        }
+        function sair(){
+            document.getElementById("exemplo").style.display = "none"
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="button" value="aperte" onclick="evnto()">
+    </form>
+    <h1 id="exemplo" onmouseover="passar()" onmouseout="sair()"><p>coloque o mouse</p></h1>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="formCadastro">
+        <label for="emailCliente">Email</label><br>
+        <input type="email" name="emailCliente" id="email">
+        <button type="submit" onclick="validarForm()">cadastro</button>
+    </form>
+    <script>
+        function validarForm(){
+            var pessoa = document.getElementById("email").value
+            if(pessoa == ""){
+                alert("voce não colocou nada")
+                event.preventDefault()
+            }else{
+                alert(`esse é sue email ${pessoa}`)
+                event.preventDefault()
+            }
+        }
+    </script>
+</body>
+</html>

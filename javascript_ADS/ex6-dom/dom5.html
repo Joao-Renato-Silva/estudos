@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <div id="primeiraDiv">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quam.</p>
+    </div>
+    <div class="primeiro" name="div1" >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, nesciunt.
+    </div>
+    <div class="primeiro" name="div1">
+        <p>Lorem ipsum dolor sit amet <span class="cor">consectetur adipisicing elit. Neque alias totam</span> distinctio dolores cum sit?</p>
+    </div>
+
+    <div class="primeiro">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, odit?</p>
+    </div>
+
+
+</body>
+<script>
+    let lista = document.getElementsByTagName("li")
+    for(i = 0; i < lista.length; i++){
+        lista[i].style.backgroundColor = "blue"
+    }
+
+    let Div1 = document.getElementById("primeiraDiv")
+    Div1.style.color = "green"
+    
+    let primeira = document.getElementsByName("div1")[0]
+    primeira.style.backgroundColor = "lightblue"
+    primeira.style.color = "gray"
+
+    let segunda= document.getElementsByName("div1")[1]
+    segunda.style.backgroundColor = "lightgreen"
+    segunda.style.color = "gray"
+
+    let clase = document.getElementsByClassName(".primeiro")[2]
+    clase.style.backgroundColor = "green"
+
+    let destaque = document.querySelector("span.cor")
+    destaque.style.padding = "10px"
+</script>
+</html>

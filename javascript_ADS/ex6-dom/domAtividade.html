@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="estilo">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, est!
+    </div>
+    <div class="estilo"> 
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, iusto.
+    </div>
+    <p class="estilo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iste.</p>
+    <p> <span class="estilo">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span> Tempore voluptatem odit libero perferendis vel quidem eius corrupti placeat obcaecati. Voluptatum molestiae officia esse vitae, libero provident ullam excepturi minima sit!</p>
+</body>
+<script>
+    let coisa = document.querySelectorAll(".estilo")
+    for(i = 0; i < coisa.length; i++){
+        coisa[i].style.background = "blue"
+        coisa[i].style.color = "white"
+        coisa[i].innerText = coisa[i].innerText.toUpperCase()
+    }
+</script>
+</html>
