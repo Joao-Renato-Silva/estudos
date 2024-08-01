@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificador para voto</title>
+</head>
+<body>
+    <h1>qual sua idade</h1>
+    <input type="number" id="idade">
+    <input type="button" value="confirmar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            var idade = Number(document.getElementById("idade").value)
+            var resultado = document.getElementById("res")
+            if(idade < 16){
+                resultado.innerHTML = `Você é menor de idade e não pode voltar `
+            }else if(idade < 18 || idade >= 65){
+                resultado.innerHTML = `Você pode votar caso queira`
+            }else{
+                resultado.innerHTML = `você deve vota`
+            }
+        }
+    </script>
+</body>
+</html>

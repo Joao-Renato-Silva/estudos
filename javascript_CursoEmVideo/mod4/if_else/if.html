@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usando if</title>
+</head>
+<body>
+    <h1>ver sobre multa</h1>
+    <input type="number" name="" id="num1">
+    <input type="button" value="somar" class="botao" onclick="somar()">
+    <div id="vel"></div>
+    <script>
+        function somar(){
+        var velocidade = Number(document.getElementById("num1").value)
+        var vel = document.getElementById("vel")
+        vel(velocidade >= 50
+        ? vel.innerText = `voce esta acima da velocidade` 
+        : vel.innerText = `dirija com sinto`)
+        /*if(velocidade >= 50){
+            vel.innerHTML = `voce esta acima da velocidade`
+        }else{
+            vel.innerHTML = `dirija sempre no limite `
+        }*/
+    }
+    </script>
+</body>
+</html>

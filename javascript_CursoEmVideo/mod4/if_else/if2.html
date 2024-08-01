@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>seu pais</h1>
+    <input type="text" name="" id="txt1">
+    <input type="button" value="confirmar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            var pais = document.getElementById("txt1").value
+            var resultado = document.getElementById("res")
+            if(pais == "brasil"){
+                resultado.innerHTML = `voce é brasileiro pois mora no ${pais}` 
+            }else{
+                resultado.innerHTML = `voce é estrangeiro pois mora no ${pais}`
+            }
+        }
+    </script>
+</body>
+</html>

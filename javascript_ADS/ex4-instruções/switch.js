@@ -18,14 +18,14 @@ var bebida = "café"
 
 switch(bebida){
     case "café":
-    console.log("o Café custa 3,50$!")
+        console.log("o Café custa 3,50$!")
     break
     case "leite":
         console.log("o leite custa 8,50$!")
     break
     case "chá":
-    console.log("o Chá custa 8,50$!")
+        console.log("o Chá custa 8,50$!")
     break
     default :
-    console.log("A escolha deve ser feita entre café, leite ou chá")
+        console.log("A escolha deve ser feita entre café, leite ou chá")
 }

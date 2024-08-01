@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM(document object model)</h1>
+    <p>aqui vai o resultado</p>
+    <p>aprendendo <strong>dom</strong> em JavaScript</p>
+    <div id="bloco">click aqui</div>
+    <script>
+        var p1 = document.getElementsByTagName("p")[0]
+        document.write(p1.innerHTML)
+
+        var bloco = document.getElementById("bloco")
+        bloco.style.background = "black"
+        bloco.style.color = "white"
+
+        var h1 = document.querySelector("h1")
+        h1.style.background = "black"
+    </script>
+</body>
+</html>
