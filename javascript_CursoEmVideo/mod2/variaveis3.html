@@ -6,9 +6,45 @@
     <title>variaveis e tipos</title>
 </head>
 <body>
+    <h1>isso ai</h1>
+    <form action="">
+        <fieldset>
+            <legend>cadastro</legend>
+            <label for="">Nome</label><br/>
+            <input type="text" name="" id="nome"><br/>
+            <label for="">Senha</label><br/>
+            <input type="password" name="" id="senha">
+        </fieldset>
+        <fieldset>
+            <legend>Destino</legend>
+            <input type="checkbox" name="fraça" id="local">
+            <label for="">frança</label><Br>
+            <input type="checkbox" name="paris" id="local">
+            <label for="">paris</label><br/>
+            <input type="checkbox" name="narnia" id="local">
+            <label for="">narnia</label><br/>
+
+        </fieldset>
+        <fieldset>
+            <legend>Pagamento</legend>
+            <input type="radio" name="Pagamento" id="cartaoCredito">Cartão de Crédito<Br>
+            <input type="radio" name="Pagamento" id="bolto">Boleto<br>
+            <input type="radio" name="Pagamento" id="pix">Pix<Br>
+        </fieldset>
+        <button id="confirmar" onclick="confirmar()">confirmar</button>
+    </form>
     <script>
-        var nome = window.prompt("qual é seu nome")
-        document.write(`seu nome tem ${noem.write} letras`)
+        var destino = document.getElementById("local")
+        var pagar = document.getElementsByClassName("Pagamento")
+        var nome =  document.getElementById("nome")
+        var senha =  document.getElementById("senha")
+        //var nome = window.prompt("qual é seu nome")
+        var confirmar = document.getElementById("confirmar")
+        function confirmar(){
+            alert(`erro`)
+        }
+        
+       
     </script>
 </body>
 </html>
