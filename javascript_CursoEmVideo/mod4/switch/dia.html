@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dia de hoje</title>
+</head>
+<body>
+    <h1>que dia é hoje</h1>
+    <div id="res"></div>
+    <script>
+        var data = new Date()
+        var hoje = data.getDay()
+        var resultado = document.getElementById("res")
+        switch(hoje){
+            case 1:
+                resultado.innerText = `hoje é segunda-feita`
+                break
+            case 2: 
+                resultado.innerText = `hoje é terça-feira`
+                break
+            case 3: 
+                resultado.innerText = `hoje é quarta-feita`
+                break
+            case 4: 
+                resultado.innerText = `hoje é quinta-feita`
+                break
+            case 5: 
+                resultado.innerText = `hoje é sexta-feita`
+                break
+            case 6: 
+                resultado.innerText = `hoje é sabado`
+                break
+            case 0: 
+                resultado.innerText = `hoje é domingo`
+                break
+            default:
+                resultado.innerText = `vc não esta na terra`
+        }
+    </script>
+</body>
+</html>
