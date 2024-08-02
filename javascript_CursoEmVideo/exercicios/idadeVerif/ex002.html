@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/exercicios/idadeVerif/css/style.css">
+    <title>Document</title>
+</head>
+<body onload()>
+    <nav>
+        <h1>Verificador de idade</h1>
+    </nav>
+    <header>
+
+        <p>coloque sua idade</p>
+        <input type="number" name="idade" id="idade"><br>
+        <label for="macho">masculino</label>
+        <input type="radio" name="sexo" id="macho" value="masculino">
+        <label for="femea">feminino</label>
+        <input type="radio" name="sexo" id="femea" value="feminino"><br>
+        <input type="button" value="Verificar" id="botao" onclick="verificar()">
+        <div id="res">
+            <p>preencha os dados para ver o resultado</p> 
+            <img src="/exercicios/idadeVerif/img/adulta.jpeg" alt="" id="imagem">
+        </div>
+    </header>
+    <script>
+        function verificar(){
+            
+            var idade = document.getElementById("idade").value
+            var sexo = document.getElementsByName("sexo")
+            var resposta = document.getElementById("res")
+            var imag = document.getElementById("imagem")
+            for (var i = 0; i < sexo.length; i++) {
+                if (sexo[i].checked) {
+                    sexo = sexo[i].value;
+                }
+            }
+            if(idade < 5) {
+                resposta.innerHTML = `Você é apenas um bebe de ${idade} anos do sexo ${sexo}`
+                imag.src = "/exercicios/idadeVerif/img/bebe.jpeg"
+            }else if(idade < 13){
+                resposta.innerHTML = `Você é uma criança de ${idade} anos do sexo ${sexo}`
+                imag.src = "/exercicios/idadeVerif/img/imagens.jpeg"
+            }else if(idade < 18){
+                resposta.innerHTML = `Você é uma adolecente de ${idade} anos do sexo ${sexo}`
+                imag.src = "/exercicios/idadeVerif/img/adolecente.jpeg"
+            }else if(idade < 60){
+                resposta.innerHTML = `Você é uma adulto de ${idade} anos do sexo ${sexo}`
+                imag.src = "/exercicios/idadeVerif/img/adulta.jpeg"
+            }else if (idade < 100){
+                resposta.innerHTML = `Você é uma idoso de ${idade} anos do sexo ${sexo}`
+                imag.src = "/exercicios/idadeVerif/img/idosa.jpeg"
+            }else{
+                resposta.innerHTML = `Você ja ta com o pé na cova em ta com ${idade} anos já`
+            }
+            
+        }
+    </script>
+</body>
+</html>
