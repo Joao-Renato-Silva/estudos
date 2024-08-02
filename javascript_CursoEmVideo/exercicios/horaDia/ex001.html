@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/exercicios/horaDia/css/style.css">
+    <title>Hora do dia</title>
+</head>
+<body onload="carregar()" id="fundo">
+    <header>
+    <nav>
+        <h1>Hora do dia</h1>
+    </nav>
+        <div id="res"></div>
+        <img src="" alt="foto" id="imagem">
+    </header>
+    <footer>&copy;Joãozinho dos cria</footer>
+    <script>
+            var agora = new Date()
+            var hora = agora.getHours() 
+            var img = document.getElementById("imagem")
+            var resposta = document.getElementById("res")
+            var fundo = document.getElementById("fundo")
+            resposta.innerHTML = `agora são ${hora} horas`
+            if(hora > 5 && hora < 12){
+                img.src = "/exercicios/horaDia/img/free-photo-of-frio-com-frio-panorama-vista.jpeg"
+                fundo.style.background = "lightyellow"
+            }else if(hora >=12 && hora <= 17){
+                img.src = "/exercicios/horaDia/img/free-photo-of-frio-com-frio-panorama-vista.jpeg"
+                fundo.style.background = "lightblue"
+            }else if(hora >=18 && hora <= 23){
+                img.src = "/exercicios/horaDia/img/pexels-photo-355465.jpeg"
+                fundo.style.background = "#5b5bc4"
+            }else{
+                img.src = "/exercicios/horaDia/img/pexels-photo-813269.jpeg"
+                fundo.style.background = "#181897"
+            }
+    </script>
+</body>
+</html>
