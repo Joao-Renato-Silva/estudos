@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/exercicios/tabuada/css/style.css">
+    <title>tabuada</title>
+</head>
+<body >  
+    <header>
+        <h1>FODA</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Divida</h2>
+            Seu numero
+            <input type="number" name="numero" id="numero">
+            Quantas vezes
+            <input type="number" name="multiplica" id="multiplica">
+            <input type="button" value="Calcular" onclick="calcular()" class="botao">
+        </div>
+        <div id="res">
+        </div>
+    </main>
+    <footer>
+        <h2>JoãoRMMSilva&copy;</h2>
+    </footer>
+    <script>
+    function calcular(){
+        var resultado = document.getElementById("res")
+        let num = Number(document.getElementById("numero").value)
+        let multiplo = 1
+        var x = Number(document.getElementById("multiplica").value)
+        if(num == 0){
+            resultado.innerHTML = "por favor digite um numero"
+        }else{
+            for(c = num; c <= (num * x);c += num){
+                resultado.innerHTML += `${num} x ${multiplo++} = ${c}<BR>`
+            }
+        }
+    }
+    </script>
+</body>
+</html>
