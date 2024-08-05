@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/exercicios/ex/css/style.css">
+    <title>Document</title>
+</head>
+<body >  
+    <header>
+        <h1>vamos contar</h1>
+    </header>
+    <main>
+        <div>
+            <h3>incio:</h3>
+            <input type="number" name="primeiro" id="primeiro">
+            <h3>fim:</h3>
+            <input type="number" name="ultimo" id="ultimo">
+            <h3>passo</h3>
+            <input type="number" name="espaco" id="espaco" >
+            <Br>
+            <input type="button" value="contar" onclick="verificar()">
+        </div>
+        <div id="res">
+            contando
+        </div>
+    </main>
+    <footer>
+        <h2>JoãoRMMSilva&copy;</h2>
+    </footer>
+    <script>
+    function verificar(){
+        var inicio = Number(document.getElementById("primeiro").value)
+        var fim = Number(document.getElementById("ultimo").value)
+        var pulo = Number(document.getElementById("espaco").value)
+        var resulta = document.getElementById("res")
+        if(inicio < fim){ 
+                for(let c = inicio; c <= fim; c += pulo){
+                resulta.innerHTML += `${c}`}
+            }else{
+                for(let c = inicio; c >= fim; c -= pulo){
+                resulta.innerHTML += `${c}` }
+            }
+    }
+    </script>
+</body>
+</html>
