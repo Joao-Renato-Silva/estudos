@@ -14,22 +14,27 @@
             background-color: green;
             border: 1px solid rgb(128, 85, 85);
             text-align: center;
-            flex:auto;
+            flex-basis: 150;
         }
         div#i1{
-            align-self: auto;
+            flex-shrink: 1;
+            flex-grow: 2;
         }
         div#i2{
-            align-self: flex-start;
+            flex-shrink: 0;
+            flex-grow: 1;
         }
         div#i3{
-            align-self: flex-end;
+            flex-shrink: 0;
+            flex-grow: 0;
         }
         div#i4{
-            align-self: center;
+            flex-shrink: 1;
+            flex-grow: 0;
         }
         div#i5{
-            align-self: stretch;
+            flex-shrink: 1;
+            flex-grow: 1;
         }
     </style>
 </head>

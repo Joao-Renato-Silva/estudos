@@ -8,19 +8,22 @@
         div.container{
             background-color: black;
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
         }
         div.item{
             background-color: green;
             border: 1px solid rgb(128, 85, 85);
             text-align: center;
             flex:auto;
+            flex-basis: 200px;
         }
         div#i1{
             align-self: auto;
+            flex-basis: 150px;
         }
         div#i2{
             align-self: flex-start;
+            flex-basis: 100px;
         }
         div#i3{
             align-self: flex-end;
@@ -35,13 +38,13 @@
 </head>
 <body>
     <div class="container">
-        <div class="item" id="i1">a</div>
-        <div class="item" id="i2">b</div>
+        <div class="item" id="i1">aaaaaaa</div>
+        <div class="item" id="i2">bsssss</div>
         <div class="item" id="i3">c</div>
-        <div class="item" id="i4">d</div>
+        <div class="item" id="i4">ddd</div>
         <div class="item" id="i5">e</div>
-        <div class="item" id="i6">f</div>
-        <div class="item" id="i7">g</div>
+        <div class="item" id="i6">sssssssssssss</div>
+        <div class="item" id="i7">gasd</div>
     </div>
 </body>
 </html>
